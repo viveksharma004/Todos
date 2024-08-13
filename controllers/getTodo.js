@@ -5,7 +5,7 @@ exports.getTodo=async (req,res)=>{
         const response=await Todo.find();
         const {title,description}=response;
         // response is in the array format
-        console.log(response);
+        //console.log(response);
         res.status(200).json(
             {
                 success:true,
